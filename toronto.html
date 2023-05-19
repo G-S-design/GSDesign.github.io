@@ -41,6 +41,36 @@
 			color: purple;
 			text-decoration: none;
 		}
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+		.container .image-description {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			padding: 10px;
+			background-color:none;
+			color: none;
+			font-size: 14px;
+			visibility: hidden;
+			opacity: 0;
+			transition: opacity 0.2s ease-in-out;
+		}
+		
+		.container:hover > .image-description {
+		visibility: hidden;
+		opacity: 0;
+		color: #333;
+		}
+
+		.container:hover:hover > .image-description {
+		visibility: visible;
+		opacity: 1;
+		color: #333;
+		}
 	</style>
 </head>
 <body>
@@ -56,5 +86,49 @@
 		</p>
 		<a href="index.html" class="back-link">Back to Home</a>
 	</div>
+	<div class="container">
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+          <div class="image-wrapper">
+            <img src="C:\Users\gabri\Desktop\CODE\Website\_MG_2493-6.jpg" alt="Image 1">
+            <div class="image-description">Description of the image</div>
+          </div>
+          <div class="image-wrapper">
+            <img src="C:\Users\gabri\Desktop\CODE\Website\_MG_2543-2.jpg" alt="Image 2">
+            <div class="image-description">Description of the image</div>
+          </div>
+          <div class="image-wrapper">
+            <img src="C:\Users\gabri\Desktop\CODE\Website\_MG_3899.jpg" alt="Image 3">
+            <div class="image-description">Description of the image</div>
+          </div>
+          <div class="image-wrapper">
+            <img src="C:\Users\gabri\Desktop\CODE\Website\_MG_3024-2.jpg" alt="Image 4">
+            <div class="image-description">Description of the image</div>
+          </div>
+          <div class="image-wrapper">
+            <img src="C:\Users\gabri\Desktop\CODE\Website\_MG_3034.jpg" alt="Image 5">
+            <div class="image-description">Description of the image</div>
+          </div>
+          <div class="image-wrapper">
+            <img src="C:\Users\gabri\Desktop\CODE\Website\_MG_3038.jpg" alt="Image 6">
+            <div class="image-description">Description of the image</div>
+          </div>
+          <div class="image-wrapper">
+            <img src="C:\Users\gabri\Desktop\CODE\Website\_MG_3039.jpg" alt="Image 7">
+            <div class="image-description">Description of the image</div>
+          </div>
+          <div class="image-wrapper">
+            <img src="C:\Users\gabri\Desktop\CODE\Website\_MG_3044.jpg" alt="Image 8">
+            <div class="image-description">Description of the image</div>
+          </div>
+          <div class="image-wrapper">
+            <img src="C:\Users\gabri\Desktop\CODE\Website\_MG_3158.jpg" alt="Image 9">
+            <div class="image-description">Description of the image</div>
+          </div>
+          <div class="image-wrapper">
+            <img src="C:\Users\gabri\Desktop\CODE\Website\_MG_3159.jpg" alt="Image 10">
+            <div class="image-description">Description of the image</div>
+          </div>
+      </div>
 </body>
 </html>
